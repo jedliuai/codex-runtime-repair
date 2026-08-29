@@ -1,0 +1,7 @@
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+staging-backup-*/
+*-backup-*/
