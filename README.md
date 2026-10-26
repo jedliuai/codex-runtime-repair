@@ -23,6 +23,10 @@
 
 ## English
 
+### Desktop says "Unable to load organization settings"?
+
+If the CLI works but the Windows desktop app is blocked at this message, see the separate [CODEX_CLI_PATH troubleshooting guide](docs/organization-settings-cli-path.md#english). It covers a user-level override pointing to an external CLI, with backup, recovery, verification, and rollback steps. The runtime repair script does not perform this repair.
+
 ### What problem does this fix?
 
 Some Windows builds of the Codex desktop app can get stuck on startup after installation or after an automatic update.
@@ -151,6 +155,10 @@ codex windows powershell desktop-app repair-tool runtime-cache openai msix efs
 <a id="中文"></a>
 
 ## 中文
+
+### 桌面端提示“无法加载组织设置”？
+
+如果 CLI 能正常使用，但 Windows 桌面端被这个提示卡住，请查看独立的 [CODEX_CLI_PATH 排障指南](docs/organization-settings-cli-path.md#中文)。文档说明如何检查指向外部 CLI 的用户级环境变量，并提供备份、修复、验证和回退步骤。原有 runtime 修复脚本不执行这项修复。
 
 ### 这个项目解决什么问题？
 
