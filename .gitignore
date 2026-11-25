@@ -5,3 +5,4 @@
 Thumbs.db
 staging-backup-*/
 *-backup-*/
+build/dist/

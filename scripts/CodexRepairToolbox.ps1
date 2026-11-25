@@ -714,7 +714,7 @@ $CountdownTimer.add_Tick({
 
 $ui.LoginToggle.add_Click({
     if (-not $script:IsAdmin) {
-        [System.Windows.MessageBox]::Show($window, "暂停和恢复 WinNAT 需要管理员权限。`n`n请关闭本窗口，重新双击启动器，并在弹出的权限提示里点「是」。", '需要管理员权限', 'OK', 'Information') | Out-Null
+        [System.Windows.MessageBox]::Show($window, "暂停和恢复 WinNAT 需要管理员权限。`n`n请关闭本窗口，重新双击「双击启动脚本」，并在弹出的权限提示里点「是」。", '需要管理员权限', 'OK', 'Information') | Out-Null
         return
     }
     if ($script:LoginOn) {

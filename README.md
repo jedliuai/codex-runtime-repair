@@ -19,6 +19,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/jedliuai/codex-runtime-repair/releases/latest/download/codex-repair-toolbox-windows.zip"><strong>⬇ 一键下载（Windows）· Download for Windows</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/jedliuai/codex-runtime-repair/releases/latest">更新记录 · Release notes</a>
+</p>
+
+<p align="center">
   <img alt="Codex 修复工具箱界面" src="docs/images/toolbox.png" width="820">
 </p>
 
@@ -69,11 +75,11 @@
 
 ## 三步使用
 
-1. 点页面右上角 **Code → Download ZIP** 下载并解压（或 `git clone`）。
-2. 双击根目录里的 **`CodexRepairToolbox.cmd`**。
+1. **[点这里一键下载 `codex-repair-toolbox-windows.zip`](https://github.com/jedliuai/codex-runtime-repair/releases/latest/download/codex-repair-toolbox-windows.zip)**，右键 →「全部解压缩」。
+2. 打开解压出来的文件夹，双击 **`双击启动脚本.cmd`**。
 3. 弹出权限提示时点 **「是」**（登录修复需要管理员权限），然后按窗口里的 ①②③ 操作。
 
-不需要安装任何东西，只用 Windows 自带的 PowerShell。
+不需要安装任何东西，只用 Windows 自带的 PowerShell。请先解压再双击，不要直接在压缩包里运行。如果 Windows 弹出「已保护你的电脑」，点「更多信息 → 仍要运行」。
 
 ### 问题一：一键修复
 
@@ -144,7 +150,7 @@
 看窗口里的端口状态。如果显示「被某个程序占用」，先关掉那个程序（通常是上一次没退出的登录进程）再试。
 
 **弹出权限提示时点了「否」？**
-一键修复照样能用；登录模式开关需要管理员权限，重新双击启动器并点「是」即可。
+一键修复照样能用；登录模式开关需要管理员权限，重新双击 `双击启动脚本.cmd` 并点「是」即可。
 
 **开关忘了关，Docker / WSL2 断网了？**
 开关打开 10 分钟后会自动恢复。也可以重新打开工具箱，或者在管理员 PowerShell 里运行 `net start winnat`。
@@ -153,7 +159,7 @@
 
 | 文件 | 作用 |
 |---|---|
-| `CodexRepairToolbox.cmd` | 双击启动图形界面 |
+| `双击启动脚本.cmd` | 双击启动图形界面 |
 | `scripts/CodexRepairToolbox.ps1` | 图形界面（PowerShell 5.1 + WPF） |
 | `scripts/Repair-CodexRuntime.ps1` | 问题一的修复脚本（图形界面也调用它） |
 | `scripts/Set-CodexLoginMode.ps1` | 问题二的命令行版 |
@@ -180,8 +186,8 @@ Desktop stuck on "Unable to load organization settings" instead? See the [CODEX_
 
 ### Quick start
 
-1. **Code → Download ZIP** and extract it (or `git clone`).
-2. Double-click **`CodexRepairToolbox.cmd`**.
+1. **[Download `codex-repair-toolbox-windows.zip`](https://github.com/jedliuai/codex-runtime-repair/releases/latest/download/codex-repair-toolbox-windows.zip)** and extract it (right-click → Extract All).
+2. Double-click **`双击启动脚本.cmd`** ("double-click to start").
 3. Click **Yes** on the UAC prompt (the login fix needs admin rights), then follow steps ①②③ in the window.
 
 Nothing to install: it uses the built-in Windows PowerShell 5.1 and WPF.
